@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Riya V Navade — Portfolio</title>
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#7c3aed;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;color:#e6eef8;background:linear-gradient(180deg,#071021 0%, #071723 100%);-webkit-font-smoothing:antialiased}
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:transparent;position:sticky;top:0;backdrop-filter: blur(6px);z-index:20}
+    .brand{display:flex;gap:12px;align-items:center}
+    .avatar{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-weight:700;background:linear-gradient(135deg,var(--accent),#2dd4bf);color:white}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .container{max-width:980px;margin:28px auto;padding:18px}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:center}
+    .card{background:var(--card);padding:22px;border-radius:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+    h1{margin:0 0 6px;font-size:26px}
+    p.lead{color:var(--muted);margin:0 0 12px}
+    .contact{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{background:var(--accent);color:white;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:700}
+    .info-list{display:grid;gap:10px}
+    .section{margin-top:18px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .skill{display:flex;flex-direction:column;gap:6px}
+    .skill .bar{height:10px;background:var(--glass);border-radius:999px;overflow:hidden}
+    .skill .fill{height:100%;width:60%;background:linear-gradient(90deg,var(--accent),#06b6d4)}
+    footer{text-align:center;color:var(--muted);padding:18px;margin-top:22px}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.avatar{width:48px;height:48px}.grid-2{grid-template-columns:1fr}.container{padding:12px}}
+    /* small utilities */
+    .meta{color:var(--muted);font-size:14px}
+    .pill{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:999px;font-weight:600}
+    .timeline{display:flex;flex-direction:column;gap:10px}
+    .timeline-item{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);padding:10px;border-radius:10px}
+    .nav-toggle{display:none}
+    @media (max-width:700px){nav{display:none}.nav-toggle{display:block}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <div class="avatar">RN</div>
+      <div>
+        <div style="font-weight:800">RIYA V NAVADE</div>
+        <div class="meta">Fresher • Aspiring Web Developer</div>
+      </div>
+    </div>
+    <div>
+      <button class="nav-toggle btn" onclick="scrollToSection('contact')">Contact</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="card">
+        <h1>Profile</h1>
+        <p class="lead">I seek Challenging Opportunities where I can use my skills for the success of organization.</p>
+
+        <div class="section">
+          <h3>Contact</h3>
+          <div class="info-list">
+            <div><strong>Phone:</strong> <a href="tel:+918867496199" class="pill">+91 88674 96199</a></div>
+            <div><strong>Email:</strong> <a href="mailto:Riyanavade1234@gmail.com" class="pill">Riyanavade1234@gmail.com</a></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Skills</h3>
+          <div class="grid-2">
+            <div class="skill"><div class="meta">MS Word</div><div class="bar"><div class="fill" style="width:85%"></div></div></div>
+            <div class="skill"><div class="meta">Java</div><div class="bar"><div class="fill" style="width:60%"></div></div></div>
+            <div class="skill"><div class="meta">HTML</div><div class="bar"><div class="fill" style="width:90%"></div></div></div>
+            <div class="skill"><div class="meta">Python</div><div class="bar"><div class="fill" style="width:55%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Hobbies</h3>
+          <div class="meta">Drawing • Travelling</div>
+        </div>
+      </div>
+
+      <aside class="card">
+        <h3>Education</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <strong>PAVAN ENGLISH MEDIUM HIGH SCHOOL, DHARWAD</strong>
+            <div class="meta">1 June 2019 — 10 Aug 2020</div>
+          </div>
+          <div class="timeline-item">
+            <strong>VISHWESHWARAYA SCIENCE PU COLLEGE, DHARWAD</strong>
+            <div class="meta">1 June 2021 — 18 June 2022</div>
+          </div>
+          <div class="timeline-item">
+            <strong>JSS SMI UG AND PG STUDIES, DHARWAD</strong>
+            <div class="meta">6 Sep 2022 — 1 July 2025 (ongoing)</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3>Work</h3>
+          <div class="meta">Fresher</div>
+        </div>
+
+        <div class="section">
+          <h3>Quick actions</h3>
+          <div style="display:flex;gap:8px;flex-direction:column">
+            <a class="btn" href="mailto:Riyanavade1234@gmail.com">Email Me</a>
+            <button class="btn" onclick="copyToClipboard('Riyanavade1234@gmail.com')">Copy Email</button>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card section" id="projects">
+      <h2>Projects (Add your projects)</h2>
+      <p class="meta">You can replace these placeholders with links/screenshots of projects, GitHub repos, or college assignments.</p>
+      <div style="margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px">
+        <div class="card" style="background:rgba(255,255,255,0.02)"><strong>The Book Resell Hub</strong><div class="meta">basically it is a e-commerce web application where users can buy and sell second hand books online </div></div>
+        <div class="card" style="background:rgba(255,255,255,0.02)"><strong>7SkyEvents</strong><div class="meta">It is one of the online platform where users can book of the event like [marriage,baby shower,engagemen,ect..</div></div>
+      </div>
+    </section>
+
+    <section class="card section" id="contact">
+      <h2>Contact</h2>
+      <p class="meta">Prefer to get in touch by email or phone — or drop a message below (this demo form uses mailto).</p>
+      <form onsubmit="sendMail(event)" style="display:grid;gap:8px;max-width:640px">
+        <input required placeholder="Your name" name="name" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+        <input required type="email" placeholder="Your email" name="email" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit">
+        <textarea required name="message" placeholder="Message" rows="5" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit"></textarea>
+        <div style="display:flex;gap:8px"><button class="btn" type="submit">Send (opens email)</button><button type="button" class="btn" onclick="copyToClipboard('+918867496199')">Copy Phone</button></div>
+      </form>
+    </section>
+
+    <footer>Built with ❤️ — static HTML/CSS/JS • Open this file in your browser to preview</footer>
+  </main>
+
+  <script>
+    function copyToClipboard(text){navigator.clipboard?.writeText(text).then(()=>{alert('Copied: '+text)},()=>{prompt('Copy this:',text)})}
+    function sendMail(e){e.preventDefault();const f=new FormData(e.target);const subject='Portfolio contact from '+f.get('name');const body='Name: '+f.get('name')+'%0AEmail: '+f.get('email')+'%0A%0A'+encodeURIComponent(f.get('message'));location.href='mailto:Riyanavade1234@gmail.com?subject='+encodeURIComponent(subject)+'&body='+body}
+    function scrollToSection(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth'})}
+  </script>
+</body>
+</html>
